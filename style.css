@@ -1,0 +1,808 @@
+
+/* ================= GENERAL ================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #1f2937;
+    background-color: #ffffff;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* ================= HEADER ================= */
+
+.header {
+    width: 100%;
+    background-color: white;
+    border-bottom: 1px solid #eeeeee;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2563eb;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-menu a {
+    color: #374151;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.nav-menu a:hover {
+    color: #2563eb;
+}
+
+.admission-btn {
+    background-color: #2563eb;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.admission-btn:hover {
+    background-color: #1d4ed8;
+}
+
+
+/* ================= MOBILE MENU BUTTON ================= */
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: #111827;
+}
+
+
+/* ================= HERO ================= */
+
+.hero {
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    background-color: #f5f8ff;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+}
+
+.hero-text {
+    max-width: 700px;
+}
+
+.hero-small-text {
+    color: #2563eb;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 58px;
+    line-height: 1.1;
+    margin-bottom: 25px;
+    color: #111827;
+}
+
+.hero h1 span {
+    color: #2563eb;
+}
+
+.hero-text > p:not(.hero-small-text) {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #6b7280;
+    max-width: 650px;
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.primary-btn {
+    background-color: #2563eb;
+    color: white;
+    padding: 14px 25px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.primary-btn:hover {
+    background-color: #1d4ed8;
+}
+
+.secondary-btn {
+    border: 1px solid #2563eb;
+    color: #2563eb;
+    padding: 14px 25px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.secondary-btn:hover {
+    background-color: #2563eb;
+    color: white;
+}
+
+
+/* ================= COMMON SECTIONS ================= */
+
+.about,
+.courses {
+    padding: 90px 0;
+}
+
+.section-label {
+    color: #2563eb;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+section h2 {
+    font-size: 38px;
+    color: #111827;
+    margin-bottom: 20px;
+}
+
+.section-description {
+    max-width: 750px;
+    margin: auto;
+    color: #6b7280;
+    line-height: 1.8;
+}
+
+
+/* ================= ABOUT ================= */
+
+.about {
+    text-align: center;
+}
+
+
+/* ================= COURSES ================= */
+
+.courses {
+    background-color: #f9fafb;
+    text-align: center;
+}
+
+.course-container {
+    margin-top: 45px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.course-card {
+    background-color: white;
+    padding: 35px 25px;
+    border-radius: 10px;
+    border: 1px solid #eeeeee;
+    text-align: left;
+}
+
+.course-card h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #111827;
+}
+
+.course-card p {
+    color: #6b7280;
+    line-height: 1.6;
+}
+
+
+/* ================= WHY CHOOSE US ================= */
+
+.why-us {
+    padding: 90px 0;
+    background-color: white;
+}
+
+.why-us-heading {
+    text-align: center;
+    max-width: 750px;
+    margin: auto;
+}
+
+.why-us-heading > p:last-child {
+    color: #6b7280;
+    line-height: 1.7;
+}
+
+.features-container {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.feature-card {
+    padding: 30px 25px;
+    background-color: #f9fafb;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid #eeeeee;
+}
+
+.feature-icon {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.feature-card h3 {
+    font-size: 19px;
+    margin-bottom: 12px;
+    color: #111827;
+}
+
+.feature-card p {
+    color: #6b7280;
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+
+/* ================= TEACHERS ================= */
+
+.teachers {
+    padding: 90px 0;
+    background-color: #f9fafb;
+}
+
+.teachers-heading {
+    text-align: center;
+    max-width: 700px;
+    margin: auto;
+}
+
+.teachers-heading > p:last-child {
+    color: #6b7280;
+    line-height: 1.7;
+}
+
+.teachers-container {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.teacher-card {
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #eeeeee;
+}
+
+.teacher-image {
+    height: 230px;
+    background-color: #e5edff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.teacher-image span {
+    font-size: 80px;
+}
+
+.teacher-info {
+    padding: 25px;
+}
+
+.teacher-info h3 {
+    font-size: 21px;
+    margin-bottom: 8px;
+    color: #111827;
+}
+
+.teacher-subject {
+    color: #2563eb;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.teacher-info p:last-child {
+    color: #6b7280;
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+
+/* ================= ADMISSION ================= */
+
+.admission {
+    padding: 90px 0;
+    background-color: white;
+}
+
+.admission-heading {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 50px;
+}
+
+.admission-heading > p:last-child {
+    color: #6b7280;
+    line-height: 1.7;
+}
+
+.admission-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: start;
+}
+
+
+/* ================= ADMISSION INFO ================= */
+
+.admission-info {
+    padding: 40px;
+    background-color: #f5f8ff;
+    border-radius: 12px;
+}
+
+.admission-info h3 {
+    font-size: 28px;
+    color: #111827;
+    margin-bottom: 18px;
+}
+
+.admission-info > p {
+    color: #6b7280;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.admission-points {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.admission-point {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.admission-point span {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2563eb;
+    color: white;
+    border-radius: 50%;
+    font-size: 13px;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.admission-point p {
+    color: #374151;
+}
+
+
+/* ================= ADMISSION FORM ================= */
+
+.admission-form-container {
+    background-color: white;
+    padding: 35px;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    color: #374151;
+    margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 13px 15px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    outline: none;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #2563eb;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.form-submit {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 6px;
+    background-color: #2563eb;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.form-submit:hover {
+    background-color: #1d4ed8;
+}
+
+
+/* ================= GALLERY ================= */
+
+.gallery {
+    padding: 90px 0;
+    background-color: #ffffff;
+}
+
+.gallery-heading {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 50px;
+}
+
+.gallery-heading > p:last-child {
+    color: #6b7280;
+    line-height: 1.7;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.gallery-item {
+    height: 250px;
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.08);
+}
+
+
+/* ================= CONTACT ================= */
+
+.contact {
+    padding: 90px 0;
+    background-color: #f9fafb;
+}
+
+.contact-heading {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 50px;
+}
+
+.contact-heading > p:last-child {
+    color: #6b7280;
+    line-height: 1.7;
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.contact-card {
+    background-color: white;
+    padding: 30px 20px;
+    border-radius: 10px;
+    border: 1px solid #eeeeee;
+    text-align: center;
+}
+
+.contact-icon {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.contact-card h3 {
+    font-size: 19px;
+    color: #111827;
+    margin-bottom: 12px;
+}
+
+.contact-card p {
+    color: #6b7280;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.contact-card a {
+    color: #2563eb;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.contact-card a:hover {
+    text-decoration: underline;
+}
+
+.contact-card span {
+    color: #6b7280;
+    font-size: 13px;
+}
+
+
+/* ================= WHATSAPP ================= */
+
+.whatsapp-container {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.whatsapp-btn {
+    display: inline-block;
+    background-color: #2563eb;
+    color: white;
+    padding: 14px 25px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.whatsapp-btn:hover {
+    background-color: #1d4ed8;
+}
+
+
+/* ================= FOOTER ================= */
+
+.footer {
+    background-color: #111827;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+.footer p {
+    font-size: 14px;
+}
+
+
+/* ================= TABLET ================= */
+
+@media (max-width: 900px) {
+
+    .features-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .teachers-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+
+    /* Header */
+
+    .nav-menu {
+        display: none;
+        position: absolute;
+        top: 75px;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        flex-direction: column;
+        gap: 0;
+        border-top: 1px solid #eeeeee;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .nav-menu a {
+        padding: 15px 20px;
+        border-bottom: 1px solid #eeeeee;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .admission-btn {
+        display: none;
+    }
+
+
+    /* Hero */
+
+    .hero {
+        min-height: 500px;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero-text > p:not(.hero-small-text) {
+        font-size: 16px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+
+    /* Courses */
+
+    .course-container {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* Features */
+
+    .features-container {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* Teachers */
+
+    .teachers-container {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* Admission */
+
+    .admission-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .admission-info {
+        padding: 30px 25px;
+    }
+
+    .admission-form-container {
+        padding: 25px 20px;
+    }
+
+
+    /* Gallery */
+
+    .gallery-container {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-item {
+        height: 230px;
+    }
+
+
+    /* Contact */
+
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* ================= SMALL MOBILE ================= */
+
+@media (max-width: 600px) {
+
+    .container {
+        width: 92%;
+    }
+
+    .logo {
+        font-size: 19px;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    section h2 {
+        font-size: 30px;
+    }
+
+    .hero-buttons {
+        width: 100%;
+    }
+
+    .primary-btn,
+    .secondary-btn {
+        width: 100%;
+        text-align: center;
+    }
+
+}
+
